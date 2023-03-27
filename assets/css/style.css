@@ -11,6 +11,11 @@ body {
   overflow-x: hidden;
   font-family: "General Sans", sans-serif;
   height: 100%;
+  background: #1A1822;
+}
+
+.white {
+  color: #fff;
 }
 
 ::selection {
@@ -58,11 +63,11 @@ body {
 }
 .main_header .navbar .navbar-brand img {
   width: 100%;
-  max-width: 200px;
+  max-width: 100px;
 }
 @media (max-width: 480px) {
   .main_header .navbar .navbar-brand img {
-    max-width: 190px;
+    max-width: 90px;
   }
 }
 .main_header .navbar .navbar-toggler {
@@ -102,7 +107,7 @@ body {
   font-weight: normal;
   line-height: 20px;
   transition: all 0.5s ease;
-  color: #1A1822;
+  color: #ffffff;
   position: relative;
   text-decoration: none;
 }
@@ -161,7 +166,7 @@ body {
 .main_header.fixedHeader {
   position: fixed;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #1A1822;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   top: 0;
   transition: all 0.5s ease;
@@ -178,6 +183,7 @@ body {
 .mainSectionContainer {
   position: relative;
   padding-top: 180px;
+  padding-left: 60px;
 }
 @media (max-width: 992px) {
   .mainSectionContainer {
@@ -205,6 +211,7 @@ body {
 @media (max-width: 992px) {
   .mainSectionContainer .container {
     padding: 0;
+    margin-top: 60px;
   }
 }
 .mainSectionContainer .mainTextContent {
@@ -212,7 +219,7 @@ body {
 }
 .mainSectionContainer .mainTextContent h1 {
   margin-top: 50px;
-  font-size: 46px;
+  font-size: 56px;
   font-weight: 600;
   margin-bottom: 25px;
 }
@@ -222,21 +229,31 @@ body {
 .mainSectionContainer .mainTextContent h1 strong {
   font-weight: 600;
   color: #007bff;
+  font-size: 30px;
 }
+.mainSectionContainer .mainTextContent p {
+  font-family: "General Sans", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
 @media (max-width: 992px) {
+  .mainSectionContainer .mainTextContent .subscribeSection {
+    flex-direction: column;
+  }
   .mainSectionContainer .mainTextContent h1 {
-    font-size: 35px;
+    font-size: 55px;
+    text-align: center;
   }
   .mainSectionContainer .mainTextContent h1 .removeBrTag {
     display: none;
   }
+  .mainSectionContainer .mainTextContent p {
+    text-align: center !important;
+  }
 }
-.mainSectionContainer .mainTextContent p {
-  font-family: "General Sans", sans-serif;
-  color: #000000;
-  font-size: 18px;
-  margin-bottom: 40px;
-}
+
 .mainSectionContainer .mainTextContent .subscribeSection {
   position: relative;
   display: flex;
@@ -246,6 +263,9 @@ body {
 @media (max-width: 767px) {
   .mainSectionContainer .mainTextContent .subscribeSection {
     flex-direction: column;
+  }
+  .mainSectionContainer .mainTextContent p {
+    text-align: center !important;
   }
 }
 .mainSectionContainer .mainTextContent .subscribeSection .viewPoolButtons {
@@ -346,18 +366,18 @@ body {
   position: relative;
   z-index: -1;
   text-align: center;
-  top: -75px;
+  top: -60px;
 }
 @media (max-width: 992px) {
   .mainSectionContainer .videoSection {
-    top: 0px;
+    display: none;
   }
 }
 .mainSectionContainer .videoSection .cubeBoxOne {
   position: absolute;
-  left: 100px;
+  /* left: 100px; */
   top: 50px;
-  right: auto;
+  right: 20px;
   animation: cubeAnimationOne 5s infinite;
 }
 @media (max-width: 480px) {
@@ -437,7 +457,7 @@ body {
 }
 @media (max-width: 992px) {
   .topSocialMediaSeciton .contentMedia {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .topSocialMediaSeciton .contentMedia ul {
@@ -469,7 +489,7 @@ body {
   position: relative;
   padding-left: 30px;
   font-size: 12px;
-  color: #1A1822;
+  color: #f08ed2;
 }
 .topSocialMediaSeciton .contentMedia ul li:last-child::before {
   content: "";
@@ -507,7 +527,7 @@ body {
 }
 
 .keyFeatureSection {
-  padding: 120px 0 0px 0;
+  padding: 120px 0 50px 0;
   position: relative;
 }
 .keyFeatureSection::before {
@@ -579,10 +599,12 @@ body {
 .keyFeatureSection .keyFeatursPoints {
   position: relative;
   padding-left: 50px;
+  
 }
 @media (max-width: 767px) {
   .keyFeatureSection .keyFeatursPoints {
     padding: 0 20px;
+    
   }
 }
 .keyFeatureSection .keyFeatursPoints .featureTextContent {
@@ -654,6 +676,7 @@ body {
   }
   .keyFeatureSection .mobileViewSection #ourKeyFeatureSliders .carousel-indicators {
     bottom: -10px;
+   
   }
   .keyFeatureSection .mobileViewSection #ourKeyFeatureSliders .carousel-indicators li {
     background-color: #ccc;
@@ -862,18 +885,6 @@ body {
   position: relative;
   text-align: center;
 }
-.findTheRightPlan .findRightHeading::before {
-  content: "";
-  position: absolute;
-  left: 100px;
-  top: 10px;
-  right: auto;
-  width: 90px;
-  height: 90px;
-  background: url("../images/Cube_rightTopSide.png");
-  background-repeat: no-repeat;
-  animation: cubeAnimationOne 5s infinite;
-}
 @media (max-width: 992px) {
   .findTheRightPlan .findRightHeading::before {
     display: none;
@@ -886,7 +897,7 @@ body {
   color: #212529;
 }
 .findTheRightPlan .findRightHeading h2 span {
-  color: #476bc2;
+  color: #0a060a;
 }
 @media (max-width: 992px) {
   .findTheRightPlan .findRightHeading h2 {
@@ -951,8 +962,8 @@ body {
 }
 .findTheRightPlan .rightPlanCard .rightplanBox h3 {
   font-size: 24px;
-  color: #212529;
-  margin-bottom: 20px;
+  color: #1269c5;
+  margin-bottom: 5px;
 }
 .findTheRightPlan .rightPlanCard .rightplanBox ul {
   list-style: none;
@@ -965,7 +976,7 @@ body {
   margin-bottom: 18px;
   font-family: "General Sans", sans-serif;
   font-size: 16px;
-  color: #7e3fea;
+  color: #343131;
 }
 .findTheRightPlan .rightPlanCard .rightplanBox ul li::before {
   content: "";
@@ -1035,17 +1046,27 @@ body {
   padding: 25px;
   position: relative;
 }
-.findTheRightPlan .rightPlanCard .planThreeBox::after {
-  content: "";
-  position: absolute;
-  left: auto;
-  right: 110px;
-  bottom: -30px;
-  background-image: url("../images/Cube_rightBottomSide.png");
-  width: 65px;
-  height: 56px;
-  z-index: -1;
-  animation: cubeAnimationOne 5s infinite;
+.roadMapSection .roadMapContent {
+  position: relative;
+  height: 100%;
+  margin-top: 60px;
+}
+@media (min-width: 992px){
+  .roadMapSection .roadMapContent::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    width: 387px;
+    height: 100%;
+    margin: 0 auto;
+    top: -60px;
+    left: 0;
+    right: -300;
+  }
+  .roadMapHeading h2 {
+    text-align: center;
+  }
 }
 @media (max-width: 992px) {
   .findTheRightPlan .rightPlanCard .planThreeBox::after {
@@ -1064,28 +1085,24 @@ body {
     padding: 25px 10px;
     height: auto;
   }
+  
 }
 
 .roadMapSection {
   position: relative;
-  background-color: #212529;
+  background-color:#1A1822;
   padding: 100px 0;
-  height: 1450px;
+  height: 870px;
 }
 @media (max-width: 767px) {
   .roadMapSection {
     padding: 50px 0;
-    height: 1250px;
+    /* height: 800px; */
+
   }
-}
-.roadMapSection::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-image: url("../images/RoadMapBottomImages.png");
-  width: 400px;
-  height: 502px;
+  .roadMapSection .roadMapContent::before {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .roadMapSection::before {
@@ -1109,17 +1126,6 @@ body {
     display: none;
   }
 }
-.roadMapSection .roadMapSection_overlay::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 50px;
-  height: 50px;
-  background-color: #FAB8C4;
-  border-radius: 50%;
-  z-index: 99;
-}
 @media (max-width: 767px) {
   .roadMapSection .roadMapSection_overlay::before {
     display: none;
@@ -1128,32 +1134,10 @@ body {
 .roadMapSection .roadMapHeading {
   position: relative;
 }
-.roadMapSection .roadMapHeading .roadMapHeading_overlay {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  mix-blend-mode: normal;
-  border: 1px solid rgba(225, 225, 225, 0.2);
-  box-sizing: border-box;
-  border-radius: 50%;
-  top: -94px;
-  left: -150px;
-  animation: fa-spin 25s infinite alternate;
-}
 @media (max-width: 767px) {
   .roadMapSection .roadMapHeading .roadMapHeading_overlay {
     display: none;
   }
-}
-.roadMapSection .roadMapHeading .roadMapHeading_overlay::before {
-  content: "";
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: #FFE074;
-  position: absolute;
-  left: 160px;
-  top: 20px;
 }
 @media (max-width: 767px) {
   .roadMapSection .roadMapHeading .roadMapHeading_overlay::before {
@@ -1178,18 +1162,8 @@ body {
   height: 100%;
   margin-top: 60px;
 }
-.roadMapSection .roadMapContent::before {
-  content: "";
-  position: absolute;
-  background-image: url("../images/roadMapBoneImage.png");
-  background-repeat: no-repeat;
-  width: 387px;
-  height: 100%;
-  margin: 0 auto;
-  top: 0;
-  left: 0;
-  right: 0;
-}
+
+
 @media (max-width: 767px) {
   .roadMapSection .roadMapContent::before {
     display: none;
@@ -1236,7 +1210,8 @@ body {
 .roadMapSection .roadMapContent .roadMapTextContent.firstRoadMap,
 .roadMapSection .roadMapContent .roadMapTextContent.thriedRoadMap {
   margin-top: -45px;
-  padding-left: 30px;
+  /* margin-left: -50px; */
+  /* padding-left: 30px; */
 }
 @media (max-width: 767px) {
   .roadMapSection .roadMapContent .roadMapTextContent.firstRoadMap,
@@ -1883,7 +1858,7 @@ footer .miniFooterSection p {
 .tiersThatSection .tiersHeading h1 {
   margin: 0 0 60px 0;
   font-size: 45px;
-  color: #212529;
+  color: #ffffff;
 }
 .tiersThatSection .tiersHeading h1 span {
   color: rgb(255, 118, 118);
@@ -1988,8 +1963,8 @@ footer .miniFooterSection p {
     display: block;
   }
   .MobileToggleButton .navbar-togglerMobile {
-    background-color: #7E3FEA;
-    border: solid 1px #7E3FEA;
+    background-color: #dc7adb;
+    border: solid 1px #dc7adb;
     border-radius: 5px;
     cursor: pointer;
   }
@@ -2008,7 +1983,7 @@ footer .miniFooterSection p {
     left: auto;
     right: -100%;
     z-index: 999;
-    background-color: rgb(255, 118, 118);
+    background-color: #17171A;
     width: 50%;
     height: 100%;
     transition: all 0.5s ease;
@@ -2106,7 +2081,7 @@ footer .miniFooterSection {margin-top: 20px; padding:25px 0;}
 
 .faq-section {
   background: #212529;
-  min-height: 100vh;
+  height: 750px;
   padding: 10vh 0 0;
 }
 .faq-title h2 {
@@ -2122,7 +2097,7 @@ line-height: 1;
   left: 50%;
   width: 60px;
   height: 2px;
-  background: #E91E63;
+  background: #b13fb1;
   bottom: -25px;
   margin-left: -30px;
 }
