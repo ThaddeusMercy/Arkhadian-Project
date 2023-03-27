@@ -2064,7 +2064,7 @@ body.OpenMobileMenus .MobileMenusSection button {
 }
 
 @media only screen and ( max-width: 480px ) {
-.keyFeatureSection {padding: 50px 0 0px 0;}	
+.keyFeatureSection {padding: 50px 0 20px 0;}	
 .tiersThatSection { padding:30px 0 0 0;}
 .tiersThatSection .tiersHeading h1 { margin: 0 0 30px 0;}
 .roadMapSection .roadMapHeading h2 {font-size: 50px;}
